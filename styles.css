@@ -1,0 +1,114 @@
+/*------------Reset Css-----------*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-size: 62.5%;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*-----------Início Nav----------*/
+#logo {
+    margin-top: 12px;
+    margin-right: 400px;
+    transform: scale(0.8);
+}
+#sideNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.6em;
+    max-width: 1300px;
+    height: 80px;
+    position: fixed;
+    padding: 80px 160px;
+    top: 0;
+}
+nav ul {
+    display: flex;
+}
+nav > ul > li {
+    margin-right: 30px;
+    list-style: none;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: #e7ecd7;
+    transition: color .5s, background-position .5s;
+    font-weight: bold;
+    position: relative;
+}
+nav > ul > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #7a9131 0%, #7a9131 100%);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s;
+}
+nav > ul > li > a:hover {
+    color: #cdde9b;
+}
+nav > ul > li > a:hover::after {
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+/*---------------Fim Nav-------------*/
+/*------------Início Banner----------*/
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), #c48cc5), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.bannerText {
+    text-align: center;
+    color: #e7ecd7;
+    padding-top: 325px;
+}
+.bannerText > h1 {
+    font-size: 6em;
+    font-family: 'Kaushan Script', cursive;
+}
+.bannerText > p {
+    font-size: 2em;
+    font-style: italic;
+}
+.bannerBtn {
+    margin: 70px auto 0;
+}
+.bannerBtn > a {
+    font-size: 1.6em;
+    width: 190px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: #e7ecd7;
+    border: .5px solid #e7ecd7;
+    transition: .5s;
+}
+.bannerBtn > a:hover {
+    transform: scale(1.1);
+}
+/*-----------Fim Banner------------*/

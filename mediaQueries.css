@@ -1,0 +1,43 @@
+@media screen and (max-width: 947px) {
+    /*------Banner------*/
+     #logo {
+         margin-top: 14px;
+         margin-right: 120px;
+    }
+     nav {
+         max-width: 1090px;
+    }
+}
+ @media screen and (max-width: 690px) {
+    /*------Nav------*/
+     #logo {
+         display: none;
+    }
+     nav {
+         font-size: 1.2em;
+         padding: 60px 0;
+    }
+     #sideNav {
+         padding: 60px 0;
+    }
+     nav > ul > li {
+         margin-right: 10px;
+         margin-left: 10px;
+         list-style: none;
+    }
+    /*------Banner------*/
+     .bannerText {
+         padding: 235px 40px;
+    }
+     .bannerText > h1 {
+         font-size: 4em;
+         margin-bottom: 8px;
+    }
+     .bannerText > p {
+         font-size: 1.4em;
+    }
+     .bannerBtn {
+         margin: 40px auto 0;
+    }
+}
+ 
